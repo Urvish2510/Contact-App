@@ -1,11 +1,12 @@
 import React from 'react';
 import './App.css';
+import { GlobalProvider } from './context/Provider'
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import routes from "./routes";
 
 function App() {
   return (
-    <div className="App">
+    <GlobalProvider>
       <Router>
           <Switch>
             {routes.map((route, index) => (
@@ -18,7 +19,7 @@ function App() {
             ))}
           </Switch>
       </Router>
-    </div>
+    </GlobalProvider>
   );
 }
 
