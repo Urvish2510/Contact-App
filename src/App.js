@@ -1,6 +1,6 @@
 import React from 'react';
 import './App.css';
-import { GlobalProvider } from './context/Provider'
+import { GlobalProvider } from './context/Provider';
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import routes from "./routes";
 
